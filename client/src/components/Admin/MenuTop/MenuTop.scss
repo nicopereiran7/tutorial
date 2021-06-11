@@ -1,0 +1,28 @@
+.menu-top {
+    display: flex;
+
+    button {
+        color: #fff;
+
+        &:hover {
+             color: #dd1e1e;
+        }
+
+        &:focus,
+        &:active {
+            color: #fff;
+        }
+    }
+
+    &__left {
+        &-logo {
+            width: 100px;
+            padding: 0 10px;
+        }
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+    }
+}

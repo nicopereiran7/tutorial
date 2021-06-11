@@ -1,0 +1,62 @@
+.sign-in {
+    background-color: #851e1e;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+
+        &-tabs {
+            background-color: #fff;
+            margin-top: 50px;
+            .ant-tabs {
+                width: 35vw;
+            }
+    
+            .ant-tabs-nav-container {
+                height: 60px !important;
+            }
+    
+            .ant-tabs-nav {
+                width: 100%;
+            }
+    
+            .ant-tabs-tab {
+                width: 50%;
+                height: 60px !important;
+                text-align: center;
+                font-size: 16px;
+                border-top: 4px solid #747474 !important;
+                border-radius: 0 !important;
+                margin: 0 !important;
+
+                &:before {
+                    content: none;
+                }
+
+                span {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+            }
+
+            .ant-tabs-tab-active {
+                color: #d80b0b !important;
+                border-top: 4px solid #d80b0b !important;
+                border-radius: 0 !important;
+                border-right: 0 !important;
+                border-left: 0 !important;
+            }
+
+            .ant-tabs-content {
+                padding: 0 16px 16px 16px;
+                text-align: center;
+            }
+        }
+    }
+
+}

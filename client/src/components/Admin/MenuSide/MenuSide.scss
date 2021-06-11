@@ -1,0 +1,12 @@
+.menu-side {
+    background-color: #660505;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 65px;
+    height: 100vh;
+
+    &__menu {
+        background-color: #660505;
+    }
+}
