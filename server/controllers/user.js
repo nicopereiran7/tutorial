@@ -5,11 +5,9 @@ import { createAccessToken, createRefreshToken } from "../services/jwt.js";
 export const signUp = (req, res) => {
   const user = new User();
   const { name, lastname, email, password, repeatPassword } = req.body;
-
   user.name = name;
   user.lastname = lastname;
   user.email = email;
-
   if (!name || !lastname || !email || !password || !repeatPassword) {
     res.status(404).send({ message: "Todos los campos son obligatorios" });
   } else {
@@ -64,7 +62,8 @@ export const signIn = (req, res) => {
                 .send({ message: "El usuario o contraseña incorrecto" });
             } else {
               res.status(200).send({
-                message: "Usuario Logeado",
+                accessToken: createAccessToken(userStored),
+                refreshToken: createRefreshToken(userStored),
               });
             }
           }

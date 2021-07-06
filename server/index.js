@@ -8,6 +8,7 @@ import ActionRoutes from "./routes/action.js";
 import CategoryRoutes from "./routes/category.js";
 import ProductRoutes from "./routes/product.js";
 import UserRoutes from "./routes/user.js";
+import AuthRoutes from "./routes/auth.js";
 
 // CONSTANTES
 const app = express();
@@ -42,3 +43,4 @@ app.use("/api/action", ActionRoutes);
 app.use("/api/category", CategoryRoutes);
 app.use("/api/product", ProductRoutes);
 app.use("/api/user", UserRoutes);
+app.use("/api/auth", AuthRoutes);
